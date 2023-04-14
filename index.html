@@ -118,9 +118,9 @@ img.tbBtn {
 </head>
 
 <body onload="initChess();">
-<h1>HTML5 Chess Game Example</h1>
+<h1>SZACHY ONLINE</h1>
 
-<p>Only for 3D view: use the "+" and "-" keys to zoom. Use the numpad to play with keyboard.</p>
+<p>Tylko dla widoku 3D: użyj klawiszy „+” i „-”, aby powiększyć. Użyj klawiatury numerycznej, aby grać z klawiaturą.</p>
 <form name="chessCtrl1" onsubmit="return(false);">
 <p style="text-align:center;">[&nbsp;<input id="useAIAsk" name="useAI" type="checkbox" onclick="chess.useAI(this.checked);" checked /> <label for="useAIAsk">Against machine</label> | Promotion to: <select onchange="chess.setPromotion(this.selectedIndex);" name="selPromo"><option>Queen</option><option>Rook</option><option>Bishop</option><option>Knight</option></select> | <input type="button" name="strtBtn" value="New game" onclick="chess.organize(this.form.plyerClr1[1].checked);" /> (Human: <input type="radio" name="plyerClr1" id="white1" checked /> <label for="white1">white</label> <input type="radio" name="plyerClr1" id="black1" /> <label for="black1">black</label>) | Machine meditation level (press return to save): <input type="text" name="plyDepthCtrl" value="0" size="2" onkeypress=";if(event.keyCode===13&&chess.setPlyDepth(this.value)){alert('Ply depth setted.' + (Number(this.value) > 2 ? '\nAttention! The game could be very slow.' : ' Good game :)'));}" />&nbsp;]</p>
 
@@ -150,11 +150,11 @@ img.tbBtn {
 <tbody>
 <tr><td colspan="2" style="text-align:center;">Human is: <input type="radio" name="plyerClr2" id="white2" checked /> <label for="white2">white</label> <input type="radio" name="plyerClr2" id="black2" /> <label for="black2">black</label></td>
 <tr>
-<td>Select a PGN file (Firefox only):</td>
+<td>Wybierz plik PGN (Firefox tylko):</td>
 <td><input type="file" id="PGNFileData" /> <a href="#" onclick="loadPGNFile(); return(false);">Load</a></td>
 </tr>
 <tr>
-<td>or paste your PGN file's body here:</td>
+<td>lub wklej kod pliku PGN tutaj:</td>
 <td><textarea rows="10" cols="50" id="PGNBodyArea"></textarea> <a href="#" onclick="chess.readPGN(document.getElementById('PGNBodyArea').value,document.chessCtrl3.plyerClr2[1].checked);return(false);">Load</a><br />
 (you can try with <a href="sample.pgn">this</a> example PGN file)</td>
 </tr>
@@ -162,7 +162,7 @@ img.tbBtn {
 </table>
 </form>
 <hr />
-<p style="text-align:center;">[&nbsp;<a href="" title="Powrót do strony głównej" target="_blank">Home</a> | <a href="http://sourceforge.net/projects/htmlchess/forums" title="Go to Forums" target="_blank">Forums</a> | <a href="https://sourceforge.net/projects/htmlchess/forums/forum/1182797/topic/3792347" title="Send a comment" target="_blank">Send a comment</a>&nbsp;]</p>
+<p style="text-align:center;">[&nbsp;<a href="" title="Powrót do strony głównej" target="_blank">Home</a> | <a href="https://github.com/Polishfighter700/Polishfighter700.github.io" title="Strona projektu" target="_blank">Projekt</a> | <a href="https://github.com/Polishfighter700/Polishfighter700.github.io" title="Send a comment" target="_blank">Zastawk komentarz</a>&nbsp;]</p>
 <!--
 <hr />
 <h3 style="text-align:center;">Running code within the "chess" object.</h3>
