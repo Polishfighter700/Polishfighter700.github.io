@@ -187,21 +187,6 @@ var chess = (function() {
 		}
 	};
 
-
-// dodanie punktów za wygraną
-if (winner) {
-  if (winner === "player1") {
-    player1Score += 8;
-  } else if (winner === "player2") {
-    player2Score += 8;
-  }
-  // zaktualizowanie elementów HTML z wynikami
-  document.getElementById("player1Score").textContent = player1Score;
-  document.getElementById("player2Score").textContent = player2Score;
-}
-
-
-
 	function newPGNHeader() {
 		var sOpp = bAI ? "HTMLChess" : "?";
 		for (var iOldKey in oGameInfo) { delete oGameInfo[iOldKey]; }
